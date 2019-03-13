@@ -1,0 +1,23 @@
+{
+  "pages":[
+    "pages/activityAdd/activityAdd",
+    "pages/login/login",
+    
+    "pages/activityInfo/activityInfo",
+    "pages/editor/editor",
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  },
+  "usingComponents": {
+    "van-dialog": "../dist/dialog/index",
+    "van-field": "../dist/field/index"
+
+  }
+}

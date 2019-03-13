@@ -1,0 +1,56 @@
+/* pages/activityInfo/activityInfo.wxss */
+.info{
+  margin:30rpx;
+  font-size:14px;
+}
+.info .comment .commentlist{
+  border-top:1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info .comment .commentlist image{
+  border:1px solid red;
+  width:20%;
+  height: 120rpx;
+
+}
+.info .comment .commentlist .avat{
+  width:70%;
+ 
+  display: flex;
+  justify-content: flex-start;
+  align-items: center
+}
+.info .infolist>view{
+  margin-bottom:30rpx;
+}
+.info .infolist .title{
+ display: inline-block;
+  margin-right: 50rpx !important;
+}
+.info .infolist image{
+  border:1px solid red;
+  width:33%;
+  height: 200rpx;
+}
+.info .first{
+  display: flex;
+  justify-content: space-between
+}
+.info .img{
+  width:100%;
+}
+.info .img .imgContent{
+  width:100%;
+  border:1px solid green;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.info .img .imgContent>view{
+  width:33.333%;
+}
+.info .img .imgContent>view image{
+  width:100%;
+}

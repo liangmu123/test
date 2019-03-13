@@ -1,0 +1,98 @@
+<!--pages/activityInfo/activityInfo.wxml-->
+<view class='info'>
+  <image src='' style="width:100%;height:250rpx;" model="scaleToFill"></image>
+  <view class='infolist'>
+    <view class='first'>
+      <text class='title'>5月1日大学同学聚餐</text>
+      <text>报名中</text>
+    </view> 
+     <view>
+      <text class='title'>活动类型:</text>
+      <text>报名中</text>
+    </view> 
+     <view>
+      <text class='title'>活动标签:</text>
+      <text>报名中</text>
+    </view>
+     <view>
+      <text class='title'>活动时间:</text>
+      <text>报名中</text>
+    </view>
+     <view>
+      <text class='title'>活动地点:</text>
+      <text>报名中</text>
+    </view>
+     <view>
+      <text class='title'>限制人数:</text>
+      <text>报名中</text>
+    </view>
+     <view>
+      <text class='title'>已报名数:</text>
+      <text>报名中</text>
+    </view>
+     <view>
+      <text class='title'>活动描述:</text>
+      <text>报名中</text>
+    </view>
+      <view class="img">
+      <view class='title'>宣传图片:</view>
+      <view class="imgContent">
+        <view class="imgKuang">
+            <image src=''  mode='aspectFit'></image>
+        </view>
+      </view>
+      
+    </view>
+      <view>
+      <text class='title'>宣传视频:</text>
+       <video src=''></video>
+    </view>
+  </view>
+  <view class='comment'>
+    评论
+    <view class='commentlist'>
+    <view class='avat'> 
+      <image src='' model="aspectFit"></image>
+      <text>ehfewhfehfe</text>
+    </view>
+    <text>2018-2-4</text>
+    </view>
+  </view>
+  <view class='btn'>
+    <button bindtap='showDiaolg'>报名</button>
+     <button>签到</button>
+      <button>关注</button>
+       <button>分享</button>
+       <button>评论</button>
+       <view>
+          <button>编辑</button>
+          <button>发布</button>
+          <button>取消</button>
+          <button>完成</button>
+       </view>
+  </view>
+
+  <van-dialog
+  use-slot
+  async-close
+  show="{{ show }}"
+  show-cancel-button
+  bind:close="onClose"
+>
+<van-field
+  value="{{ num }}"
+  label="报名人数"
+  placeholder="请输入报名人数"
+  bind:input='inputchange'
+  
+/>
+<van-field
+  value="{{ note }}"
+ 
+  label="备注"
+  :border="false"
+   bind:input='notechange'
+ 
+/>
+</van-dialog>
+</view>
